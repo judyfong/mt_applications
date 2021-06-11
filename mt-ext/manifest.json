@@ -1,0 +1,23 @@
+{
+
+  "description": "Machine translates English text to Icelandic and vice versa using the SMT models at Reykjavik University",
+  "manifest_version": 2,
+  "name": "IS-EN",
+  "version": "1.0",
+  "homepage_url": "https://github.com/judyfong/mt_applications",
+  "icons": {
+    "48": "icons/mt-logo.png"
+  },
+
+  "permissions": [
+    "<all_urls>",
+    "activeTab",
+    "webRequest"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/mt-logo.png",
+    "default_title": "IS-EN",
+    "default_popup": "popup/translate.html"
+  }
+}

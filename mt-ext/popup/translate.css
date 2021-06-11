@@ -1,0 +1,15 @@
+.hidden {
+  display: none;
+}
+
+.translate:hover {
+  background-color: #CFF2F2;
+}
+
+.translate {
+  background-color: #E5F2F2;
+  margin: 3% auto;
+  padding: 4px;
+  text-align: center;
+  font-size: 1.5em;
+}
