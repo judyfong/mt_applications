@@ -1,6 +1,6 @@
 {
 
-  "description": "Machine translates English text to Icelandic and vice versa using the SMT models at Reykjavik University",
+  "description": "IS-EN MT translates the selected sentence from English to Icelandic and vice versa using SMT models.",
   "manifest_version": 2,
   "name": "IS-EN",
   "version": "1.0",

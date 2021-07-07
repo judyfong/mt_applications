@@ -1,4 +1,4 @@
-# beastify
+# IS-EN MT
 
 ## What it does ##
 
@@ -24,7 +24,7 @@ Note that:
 
 * by default [`tabs.executeScript()`](https://developer.mozilla.org/en-US/Add-ons/WebExtensions/API/tabs/executeScript) injects the script only when the web page and its resources have finished loading. This means that clicks in the popup will have no effect until the page has finished loading.
 
-* it's not possible to inject content scripts into certain pages, including privileged browser pages like "about:debugging" and the [addons.mozilla.org](https://addons.mozilla.org/) website. If the user clicks the beastify icon when such a page is loaded into the active tab, the popup displays an error message.
+* it's not possible to inject content scripts into certain pages, including privileged browser pages like "about:debugging" and the [addons.mozilla.org](https://addons.mozilla.org/) website. If the user clicks the IS-EN MT icon when such a page is loaded into the active tab, the popup displays an error message.
 
 ## What it shows ##
 
@@ -35,4 +35,4 @@ Note that:
 
 # Credit
 
-This README was mostly written by the mdn webapplications-example repo.
+This README was mostly written by the mdn webapplications-example repo and has been edited to work for the IS-EN MT extension.
