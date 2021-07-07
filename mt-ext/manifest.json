@@ -2,7 +2,7 @@
 
   "description": "IS-EN MT translates the selected sentence from English to Icelandic and vice versa using SMT models.",
   "manifest_version": 2,
-  "name": "IS-EN",
+  "name": "IS-EN MT",
   "version": "1.0",
   "homepage_url": "https://github.com/judyfong/mt_applications",
   "icons": {
