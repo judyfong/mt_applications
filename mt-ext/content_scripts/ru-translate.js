@@ -12,8 +12,7 @@
   /**
    * Give an alert of the selected text
    */
-  var term = document.getSelection();
-  function detect_lang() {
+  function detect_lang(term) {
       let xhr = new XMLHttpRequest();
       xhr.open("GET", "https://nlp.talgreinir.is/langid/detect?q="+term);
       xhr.send();
@@ -50,7 +49,8 @@
   */
   browser.runtime.onMessage.addListener((message) => {
     if (message.command === "mt") {
-      detect_lang();
+      var term = message.term ? message.term : document.getSelection();
+      detect_lang(term);
     }
   });
 
