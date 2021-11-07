@@ -5,6 +5,9 @@
 function listenForClicks() {
   document.addEventListener("click", (e) => {
 
+    var termEl = document.getElementById("term");
+    var term = termEl ? termEl.value : null;
+
     /**
      * Insert the page-hiding CSS into the active tab,
      * then get the beast URL and
@@ -13,6 +16,7 @@ function listenForClicks() {
     function translation(tabs) {
         browser.tabs.sendMessage(tabs[0].id, {
           command: "mt",
+          term: term,
         });
     }
 
@@ -27,7 +31,7 @@ function listenForClicks() {
      * Get the active tab,
      * then call "beastify()" or "reset()" as appropriate.
      */
-    if (e.target.classList.contains("translate")) {
+    if (e.target.classList.contains("translate-btn")) {
       browser.tabs.query({active: true, currentWindow: true})
         .then(translation)
         .catch(reportError);
